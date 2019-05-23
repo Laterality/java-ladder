@@ -2,7 +2,8 @@ package com.woowacourse.ladder.domain
 
 class LadderRow(
     private val width: Int,
-    generator: BooleanGenerator) {
+    generator: BooleanGenerator
+) {
     private val states = ArrayList<LadderStepState>()
 
     init {

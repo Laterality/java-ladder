@@ -3,7 +3,8 @@ package com.woowacourse.ladder.domain
 class LadderState(
     numOfParticipants: Int,
     height: Int,
-    generator: BooleanGenerator) {
+    generator: BooleanGenerator
+) {
     private val rows = ArrayList<LadderRow>()
 
     init {
@@ -12,7 +13,7 @@ class LadderState(
         }
     }
 
-    fun forEachRow(consumer: (r:LadderRow) -> Unit){
+    fun forEachRow(consumer: (r: LadderRow) -> Unit) {
         rows.forEach(consumer)
     }
 }
